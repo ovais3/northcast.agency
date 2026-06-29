@@ -124,6 +124,11 @@
                 <text class="cf-label" x="230" y="470" fill="var(--steel)" style="animation-delay:.24s">S</text>
                 <text class="cf-label" x="-2" y="235" fill="var(--steel)" style="animation-delay:.26s">W</text>
               </g>
+              <!-- The two engines that feed the funnel -->
+              <g font-family="var(--font-body)" font-weight="600" text-anchor="middle" letter-spacing="0.04em">
+                <text class="cf-label" x="372" y="49" font-size="12" fill="var(--accent)" style="animation-delay:.5s">GUEST</text>
+                <text class="cf-label" x="96" y="427" font-size="12" fill="var(--accent-mid)" style="animation-delay:.56s">OUTBOUND</text>
+              </g>
 
               <!-- Flow paths (funnel routes that prospects travel) -->
               <g fill="none" stroke="var(--accent-mid)" stroke-width="1.2" stroke-dasharray="3 6" opacity="0.4" stroke-linecap="round">
@@ -340,6 +345,50 @@
         <div class="section-head reveal">
           <h2 class="h2" id="how-h">How Northcast brings you clients</h2>
           <p class="engines-intro">The best clients ignore cold pitches. So we find your best-fit buyers, reach them with a reason that fits, and turn those conversations into pipeline.</p>
+        </div>
+
+        <!-- ===== Animated workflow pipeline ===== -->
+        <div class="pipeline reveal" role="img" aria-label="The Northcast pipeline: your whole market flows through two engines. The Guest Engine uses Apollo, Trigify, and Riverside. The Outbound Engine uses Clay, Smartlead, and HeyReach. Both feed conversations, then booked calls, then clients.">
+          <div class="pl-market">
+            <span class="pl-blob" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><g fill="var(--steel)"><circle cx="12" cy="14" r="2.4"/><circle cx="30" cy="9" r="2.4"/><circle cx="50" cy="15" r="2.4"/><circle cx="9" cy="33" r="2.4"/><circle cx="27" cy="29" r="2.4"/><circle cx="48" cy="34" r="2.4"/><circle cx="15" cy="52" r="2.4"/><circle cx="34" cy="50" r="2.4"/><circle cx="53" cy="52" r="2.4"/></g></svg>
+            </span>
+            <span class="pl-cap">Your market</span>
+            <span class="pl-sub">Every dream client</span>
+          </div>
+
+          <div class="pl-pipe pl-pipe-in" aria-hidden="true"><span class="pl-spark"></span><span class="pl-spark d2"></span></div>
+
+          <div class="pl-engines">
+            <div class="pl-lane">
+              <span class="pl-lane-label"><i class="pl-pip warm"></i>Guest Engine</span>
+              <div class="pl-track">
+                <span class="pl-tool" title="Apollo"><img src="https://www.google.com/s2/favicons?domain=apollo.io&sz=128" alt="Apollo" width="22" height="22" loading="lazy" /></span>
+                <span class="pl-link" aria-hidden="true"><span class="pl-spark"></span></span>
+                <span class="pl-tool" title="Trigify"><img src="https://www.google.com/s2/favicons?domain=trigify.io&sz=128" alt="Trigify" width="22" height="22" loading="lazy" /></span>
+                <span class="pl-link" aria-hidden="true"><span class="pl-spark"></span></span>
+                <span class="pl-tool" title="Riverside"><img src="https://www.google.com/s2/favicons?domain=riverside.fm&sz=128" alt="Riverside" width="22" height="22" loading="lazy" /></span>
+              </div>
+            </div>
+            <div class="pl-lane">
+              <span class="pl-lane-label"><i class="pl-pip cold"></i>Outbound Engine</span>
+              <div class="pl-track">
+                <span class="pl-tool" title="Clay"><img src="https://www.google.com/s2/favicons?domain=clay.com&sz=128" alt="Clay" width="22" height="22" loading="lazy" /></span>
+                <span class="pl-link" aria-hidden="true"><span class="pl-spark"></span></span>
+                <span class="pl-tool" title="Smartlead"><img src="https://www.google.com/s2/favicons?domain=smartlead.ai&sz=128" alt="Smartlead" width="22" height="22" loading="lazy" /></span>
+                <span class="pl-link" aria-hidden="true"><span class="pl-spark"></span></span>
+                <span class="pl-tool" title="HeyReach"><img src="https://www.google.com/s2/favicons?domain=heyreach.com&sz=128" alt="HeyReach" width="22" height="22" loading="lazy" /></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pl-pipe pl-pipe-out" aria-hidden="true"><span class="pl-spark"></span><span class="pl-spark d2"></span></div>
+
+          <div class="pl-outcome">
+            <span class="pl-step">Conversations</span>
+            <span class="pl-step">Booked calls</span>
+            <span class="pl-step pl-clients">Clients</span>
+          </div>
         </div>
 
         <div class="engine-cards">
