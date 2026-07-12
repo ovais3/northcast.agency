@@ -474,11 +474,24 @@ section { padding-block: var(--section-y); }
 }
 .logo:hover { opacity: 1; transform: translateY(-2px); }
 .logo .chip {
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
   flex: 0 0 auto;
   border-radius: 8px;
-  display: block;
+  background: #fff;
+  border: 1px solid var(--hair);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.logo .chip img { width: 21px; height: 21px; object-fit: contain; }
+.logo .chip.mono {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 0.82rem;
+  color: var(--ink);
+  letter-spacing: -0.02em;
 }
 .logo .lw {
   font-family: var(--font-display);
