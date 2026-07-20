@@ -727,12 +727,12 @@ section { padding-block: var(--section-y); }
 .tools-head p { margin-top: 16px; font-size: 1.06rem; color: var(--slate); }
 
 .tool-logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 26px 44px;
-  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 22px 16px;
+  max-width: 1000px;
   margin: 0 auto;
+  justify-items: start;
 }
 .tool-logo {
   display: inline-flex;
@@ -1147,7 +1147,11 @@ section { padding-block: var(--section-y); }
   }
   .ef-link .ef-spark { left: 50%; animation-name: efSparkV; }
   .ef-out { margin: 4px 0 0 0; }
-  .tool-logos { gap: 18px 26px; }
+  .tool-logos { grid-template-columns: 1fr 1fr; gap: 18px 12px; max-width: 340px; }
+  .tool-logo { gap: 10px; }
+  .tl-name { font-size: 1rem; }
+  .tl-chip { width: 36px; height: 36px; }
+  .tl-chip img { width: 22px; height: 22px; }
   .logo-set .logo { margin: 0 18px; }
   .logo .lw { font-size: 0.98rem; }
   .logo .chip { width: 27px; height: 27px; }
